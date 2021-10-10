@@ -107,20 +107,34 @@ h2 {
 .aboutme{
     /* margin: 8px; */
     padding: 20px;
-    display: inline-flex;
+    display: flex;
     /* margin-top: 15px; */
+    align-items: center;
+    /* align-content: flex-end; */
     
 }
 
 .aboutme h2{
     /* align-items: center; */
-    padding-top: 10%;
+    /* padding-top: 16px; */
+    float: inline-start;
+    width: 17%;
+    padding-right: 5px;
+}
+
+.aboutme p{
+    position: relative;
+    float: right;
+    margin-right: 16px;
+    left: 25px;
+    margin-top:1%;
+
 }
 .divider {
     border-left: 3px solid orange;
     height:75px;
     position:relative;
-    left:10%;
-    margin-left: -3px;
-    top:0
+    /* left: 50%; */
+    top: 0;
+
 }
