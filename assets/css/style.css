@@ -74,7 +74,7 @@ h2 {
 .hero-image {
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/placeholder1.jpeg");
 
-    height: 60%;
+    height: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,5 +136,41 @@ h2 {
     position:relative;
     /* left: 50%; */
     top: 0;
+
+}
+
+.portfolio {
+    display: inline-flexbox;
+    align-content: center;
+
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+.space {
+    display:flex;
+    justify-content: space-evenly;
+}
+.divider-left{
+    border-bottom: 3px solid orange;
+    /* height:75px; */
+    position:relative;
+    /* left: 50%; */
+    width: 40%;
+    margin:16px;
+    
+
+}
+.divider-right{
+    border-bottom: 3px solid orange;
+    /* height:75px; */
+    position:relative;
+    /* left: 50%; */
+    width: 40%;
+    margin:16px;
+    margin-top: -25px;
+    
 
 }
