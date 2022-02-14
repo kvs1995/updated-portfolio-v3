@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(../images/Untitled_Artwork\ 2.png);
+    background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
@@ -15,12 +15,24 @@ body {
 
 nav {
     border: 2px solid black;
+    display: inline-flex;
 }
 
 .hero-container {
-    border: 2px solid mediumorchid;
+    /* border: 2px solid mediumorchid; */
+    padding: 2rem;
+    display:flex;
+    justify-content: center;
+    text-align: center;
 }
 
+.profile-picture {
+    width:10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid mediumorchid;
+
+}
 .about-container {
     border:2px solid  mediumvioletred;
 }
