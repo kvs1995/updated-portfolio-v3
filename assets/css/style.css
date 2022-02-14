@@ -15,7 +15,26 @@ body {
 
 nav {
     border: 2px solid black;
-    display: inline-flex;
+    /* display: inline-flex; */
+}
+
+.navigation {
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home a, .links a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color:aliceblue;
+    font-family: 'Aqua Grotesque', sans-serif;
 }
 
 .hero-container {
