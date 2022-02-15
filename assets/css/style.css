@@ -5,29 +5,35 @@
     margin: 0;
 }
 
-body {
+header {
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-color: black;
     color: aliceblue;
 }
 
 nav {
     border: 2px solid black;
-    /* display: inline-flex; */
 }
 
 .navigation {
     display:flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem; 
+    flex-flow: row wrap;
 }
 
+.home {
+    display: flex;
+}
 
 .links {
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 5rem;
+
 }
 
 .home a, .links a {
@@ -38,28 +44,91 @@ nav {
 }
 
 .hero-container {
-    /* border: 2px solid mediumorchid; */
     padding: 2rem;
     display:flex;
     justify-content: center;
     text-align: center;
+    height: 55rem;
 }
 
 .profile-picture {
-    width:10rem;
+    width:12rem;
     height: 10rem;
     border-radius: 50%;
     border: 2px solid mediumorchid;
 
 }
+
+.hero-container h2, .hero-container h4 {
+    font-family: 'Aqua Grotesque', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        min-height:45rem;
+        background-position:bottom;
+        
+    }
+    .navigation {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .links, .home {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+    .links a, .home a {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .hero-container {
+        justify-content:flex-start;
+        flex-direction: column ;
+        flex-basis: none;
+        padding:0;
+        align-items:center;
+        position: static;
+        height:22rem;
+        width: 100%;
+    }
+    .col-5 {
+        max-width: 100%;
+        flex-basis:auto;
+    }
+    .background {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 7rem;
+    }
+    .profile-picture {
+        width: 11rem;
+        height: 11rem;
+        margin: 1rem 1rem;
+    }
+    .hero-container h2 {
+        padding-top: 1rem;
+    }
+    .hero-container h4 {
+    }
+
+}
+
+main {
+    background-color: black;
+    font-family:  'Roboto', sans-serif;
+    color: aliceblue;
+}
 .about-container {
-    border:2px solid  mediumvioletred;
+    border-top:2px solid  mediumvioletred;
+    
 }
 
 .portfolio-container {
-    border: 2px solid orangered;
+    border-top: 2px solid orangered;
 }
 
 .contact-container {
-    border: 2px solid goldenrod;
+    border-top: 2px solid goldenrod;
 }
