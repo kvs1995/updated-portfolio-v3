@@ -158,6 +158,32 @@ main {
     height: 0px;
 }
 
+/* //////////////////////// PORTFOLIO ////////////////////////////*/
+.portfolio-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divider-left {
+    border-bottom: 5px solid orange;
+    flex-basis: 38%;
+    text-align: left;
+    margin-top: 1.5rem;
+    height: 0px;
+
+}
+.portfolio-container .divider-right {
+    flex-basis: 40%;
+}
+
+.portfolio-container h2 {
+    flex-basis: 10%;
+    font-size: 3.75rem;
+}
+
+/*//////// Project Cards /////////*/
+
+
 
 
 /* ///////////////////////// MEDIA QUERIES //////////////////////////*/
