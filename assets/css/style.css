@@ -159,7 +159,7 @@ main {
 }
 
 /* //////////////////////// PORTFOLIO ////////////////////////////*/
-.portfolio-container {
+.portfolio-container-title {
     display: flex;
     justify-content: space-evenly;
 }
@@ -172,19 +172,56 @@ main {
     height: 0px;
 
 }
-.portfolio-container .divider-right {
+.portfolio-container-title .divider-right {
     flex-basis: 40%;
 }
 
-.portfolio-container h2 {
+.portfolio-container-title h2 {
     flex-basis: 10%;
     font-size: 3.75rem;
 }
 
 /*//////// Project Cards /////////*/
+.cards {
+    display: flex;
+    flex-direction: row;
 
 
+}
+.project-1, .project-2, .project-3 {
+    border: 5px blue solid;
+    width: 30%;
+    height: 267px;
+    /* image-rendering: initial; */
+    /* flex: 1 1 400px; */
+    background-color:  none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.project-1 a {
 
+    /* background-position: contain; */
+    /* width: 2.75rem;
+    height: 100px; */
+    /* width: 200px;
+    height: 200px; */
+    /* height: 160px;
+    /* padding-left:100%;
+    padding-top:100px; */
+    /* width: 110%;  */
+
+
+}
+.project-1 {
+    background-image: url('../images/weather-dashboard.png');
+}
+.project-2 {
+
+    background-image: url('../images/coding-quiz.png');
+}
+.project-3 {
+    background-image: url('../images/work-day-scheduler.png');
+}
 
 /* ///////////////////////// MEDIA QUERIES //////////////////////////*/
 @media screen and (max-width: 700px) {
