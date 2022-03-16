@@ -22,19 +22,40 @@
     <nav> -- class: navbar navbar-expand-lg sticky-top
       <div> -- class: container-fluid
         <button> -- class: navbar-toggler | type: button | data-bs-toggle: collapse | data-bs-target: #navbarNavAltMarkup | aria-controls: navBarNavAltMarkup | aria-expanded: false | aria-label: Toggle navigation
+          <span> -- class: navbar-toggler-icon
         <div> -- class: collapse navbar-collapse | id: navbarNavAltMarkup
-          <div> -- class: navbar-nav
-            <a> -- class: nav-link active | aria-current: page | href: #Home
-              Home
-            <span> -- class: nav justify-content-end
-              <a> -- class: nav-link | href: #about-me
-                About Me
-              <a> -- class: nav-link | href: https://drive.google.com/file/d/1wv2uWN-obhFIj0F3cEO6k95jj61CjXCM/view?usp=sharing | target: _blank
-                Resume
-              <a> -- class: nav-link | href: #portfolio
-                Portfolio
-              <a> -- class: nav-link | href: #contact--me
+        <div> -- class: navbar-nav
+          <a> -- class: nav-link active | aria-current: page | href: #Home
+            Home
+          <span> -- class: nav justify-content-end
+            <a> -- class: nav-link | href: #about-me
+              About Me
+            <a> -- class: nav-link | href: https://drive.google.com/file/d/1wv2uWN-obhFIj0F3cEO6k95jj61CjXCM/view?usp=sharing | target: _blank
+              Resume
+            <a> -- class: nav-link | href: #portfolio
+              Portfolio
+            <a> -- class: nav-link | href: #contact--me
       -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navBarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBarNavAltMarkup">
+          <div class="navbar-nav col-lg-12">
+            <a class="nav-link active col-lg-8 col-md-6" aria-current="page" href="#home">Home</a>
+            <a class="nav-link col-lg-1 col-md-2" href="#about-me">About Me</a>
+            <a class="nav-link col-lg-1" href="https://drive.google.com/file/d/1wv2uWN-obhFIj0F3cEO6k95jj61CjXCM/view?usp=sharing" target="_blank">Resume</a>
+            <a class="nav-link col-lg-1" href="#portfolio">Portfolio</a>
+            <a class="nav-link col-lg-2" href="#contact-me">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+      <!--
     <header>
         <nav class="navigation">
             <div class="home">
@@ -47,7 +68,9 @@
                 <a href="#contact-me">Contact Me</a>
             </div>
         </nav>
-                <!-- IMAGE WITH HERO ICON ON IT -->
+
+
+                < IMAGE WITH HERO ICON ON IT >
         <div class="background" >
             <div class="hero-container">
                
@@ -55,12 +78,12 @@
                     <h4>Full-Stack Web Developer</h4>
             </div>
         </div>
-    </header>    
+      -->
 
     <main> 
 
-
-        <!-- ABOUT ME-->
+<!--
+        < ABOUT ME>
         <div class="about-container" id="about-me">
             <div class="profile-picture" >
                 <img src="assets/images/Portfolio/IMG_4734.JPG" alt=""/>
@@ -83,7 +106,7 @@
 
         </div>
 
-        <!-- PORTFOLIO -->
+        <PORTFOLIO>
         <div class="portfolio-container" id="portfolio">
             <div class="portfolio-container-title">
                 <div class="divider-left "> </div>
@@ -124,7 +147,7 @@
             </div>
         </div>
 
-        <!-- CONTACT ME -->
+        <CONTACT ME>
         <div class="contact-container" id="contact-me">
             <div class="contact-me-container-title">
                 <div class="divider-left "> </div>
@@ -139,12 +162,13 @@
             </div>
         </div>
     </main>
+  -->
 </body>
 
 <script type="module">
-  import { Toast } from 'bootstrap.esm.min.js'
+    import { Toast } from 'bootstrap.esm.min.js'
 
-  Array.from(document.querySelectorAll('.toast'))
-    .forEach(toastNode => new Toast(toastNode))
+    Array.from(document.querySelectorAll('.toast'))
+      .forEach(toastNode => new Toast(toastNode))
 </script>
 </html>
