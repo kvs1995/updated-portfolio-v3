@@ -34,6 +34,14 @@ p {
   border: 1px solid mediumaquamarine;
   margin: 5px 0px;
 }
+.nav-link{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.nav-link:active {
+  color: blue;
+}
 /*///// COVER TEXT /////*/
 
 .mask {
