@@ -15,6 +15,9 @@ main {
   overflow-y: auto;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+}
 /*///// COVER TEXT /////*/
 
 .mask {
@@ -74,6 +77,10 @@ hr {
 }
 #project-1 {
   background-color: mediumaquamarine;
+}
+
+.btn {
+  background-color: darkslategrey;
 }
 
 #project-2 {
