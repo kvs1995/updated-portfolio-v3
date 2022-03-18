@@ -118,46 +118,22 @@ hr {
 
 
 /* //////////////////////// CONTACT ME ////////////////////////////*/
-.contact-me-container-title {
-  display: flex;
-  justify-content: space-evenly;
-}
 
-.contact-me-container-title .divider-left {
-  border-bottom-color: mediumturquoise;
-}
-.contact-me-container-title .divider-right {
-  flex-basis: 40%;
-  margin-right: 1rem;
-  border-bottom-color: mediumturquoise;
-}
-
-.contact-me-container-title h2 {
-  flex-basis: 25%;
-  font-size: 3rem;
-  padding-left: 1rem;
-  text-align: center;
-}
-
-.contact-me-content {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 5rem;
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight:300;
-
-  cursor: pointer;
-
-}
-.contact-me-content a {
+#contact-me a,#contact-me p {
   color:mediumpurple;
   text-decoration: none;
+  font-size: x-large !important;
 }
 
-.contact-me-content a:hover {
+#contact-me a:hover {
   color: mediumorchid;
 }
+
+#contact-me {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 /* ADDING ONTO BOOTSTRAP */
 
 .py-6 {
@@ -174,6 +150,53 @@ html {
   font-size: 1rem;
 }
 
+
+@media screen and (max-width: 700px) {
+  #contact-me {
+    font-size: medium;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .more-portfolio {
+    flex-direction: column;
+  }
+  .project {
+    width: 100%;
+  }
+  #about-me {
+    flex-direction: row-reverse;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .more-portfolio {
+    flex-direction: column;
+  }
+  .project {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+
+}
+@media screen and (max-width: 1300px) {
+  .more-portfolio {
+    flex-direction: column;
+  }
+  .project {
+    width: 75%;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+ 
+  .p-5 {
+    width: 100%;
+  }
+
+
+
+}
 /* @include media-breakpoint-up(sm) {
   html {
     font-size: 1.2rem;
