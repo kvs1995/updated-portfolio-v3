@@ -45,11 +45,58 @@ main {
   border: 5px  solid aliceblue;
 }
 
+.featurette-heading {
+  font-family: 'Aqua Grotesque', sans-serif;
+}
 /* Eventually make it so that its an auto carousel */
 
+
+/*///// PORTFOLIO /////*/
+#portfolio {
+  flex-direction: column;
+  display: inline-flex;
+}
+
+.card-img-title, .card-title, .card-text, .github-link {
+  /* display: none; */
+}
+.card-img-overlay {
+  display: none !important;
+}
+
+.card:hover .card-img-overlay {
+  display: block !important;
+
+}
+
+#project-1 {
+  background-color: mediumaquamarine;
+}
+
+#project-2 {
+  background-color: mediumpurple;
+}
+
+#project-3 {
+  background-color: mediumblue
+}
+
+#project-4 {
+  background-color: mediumvioletred;
+}
+
+#project-5 {
+  background-color: mediumturquoise;
+}
 /* ADDING ONTO BOOTSTRAP */
 
 .py-6 {
   padding-top: 3.25rem;
   padding-bottom: 3.25rem;
 }
+
+.h-6 {
+  font-size: 3rem;
+}
+
+
