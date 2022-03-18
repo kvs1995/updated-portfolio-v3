@@ -59,6 +59,13 @@ hr {
   color: aliceblue;
 }
 
+#project-2 p,#project-4 p {
+  font-size:small;
+}
+
+#project-5 p,  #project-3 p {
+  font-size:x-small;
+}
 .card-img-title, .card-title, .card-text, .github-link {
   /* display: none; */
 }
@@ -74,13 +81,10 @@ hr {
 .btn {
   vertical-align: center;
   text-align: center !important;
+  background-color: darkslategrey;
 }
 #project-1 {
   background-color: mediumaquamarine;
-}
-
-.btn {
-  background-color: darkslategrey;
 }
 
 #project-2 {
@@ -101,6 +105,47 @@ hr {
 
 
 
+/* //////////////////////// CONTACT ME ////////////////////////////*/
+.contact-me-container-title {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-me-container-title .divider-left {
+  border-bottom-color: mediumturquoise;
+}
+.contact-me-container-title .divider-right {
+  flex-basis: 40%;
+  margin-right: 1rem;
+  border-bottom-color: mediumturquoise;
+}
+
+.contact-me-container-title h2 {
+  flex-basis: 25%;
+  font-size: 3rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.contact-me-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+
+  cursor: pointer;
+
+}
+.contact-me-content a {
+  color:mediumpurple;
+  text-decoration: none;
+}
+
+.contact-me-content a:hover {
+  color: mediumorchid;
+}
 /* ADDING ONTO BOOTSTRAP */
 
 .py-6 {
@@ -113,3 +158,24 @@ hr {
 }
 
 
+html {
+  font-size: 1rem;
+}
+
+/* @include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+} */
