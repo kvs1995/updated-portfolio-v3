@@ -52,9 +52,8 @@ main {
 
 
 /*///// PORTFOLIO /////*/
-#portfolio {
-  flex-direction: column;
-  display: inline-flex;
+hr {
+  color: aliceblue;
 }
 
 .card-img-title, .card-title, .card-text, .github-link {
@@ -69,6 +68,10 @@ main {
 
 }
 
+.btn {
+  vertical-align: center;
+  text-align: center !important;
+}
 #project-1 {
   background-color: mediumaquamarine;
 }
@@ -88,6 +91,9 @@ main {
 #project-5 {
   background-color: mediumturquoise;
 }
+
+
+
 /* ADDING ONTO BOOTSTRAP */
 
 .py-6 {
