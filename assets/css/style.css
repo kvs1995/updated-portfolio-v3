@@ -18,6 +18,18 @@ main {
 p {
   font-family: 'Roboto', sans-serif;
 }
+
+.navbar-toggler {
+  color: aliceblue;
+  border-color: aliceblue;
+  background-color: black;
+  border: 1px solid aliceblue;
+}
+.navbar-toggler-icon {
+  color:aliceblue;
+  border: aliceblue;
+  -webkit-tap-highlight-color: aliceblue;
+}
 /*///// COVER TEXT /////*/
 
 .mask {
