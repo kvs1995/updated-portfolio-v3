@@ -30,6 +30,10 @@ p {
   border: aliceblue;
   -webkit-tap-highlight-color: aliceblue;
 }
+.line {
+  border: 1px solid mediumaquamarine;
+  margin: 5px 0px;
+}
 /*///// COVER TEXT /////*/
 
 .mask {
@@ -49,12 +53,12 @@ p {
 
 /*///// ABOUT ME //////*/
 
-#about-me-img {
+#about-me-img,   #about-me-img-hidden {
  text-align: center;
 
 }
 
-#about-me-img img {
+#about-me-img img,   #about-me-img-hidden {
   border-radius: 65px;
   box-shadow: 0px 0px 10px 10px slategray;
   border: 5px  solid aliceblue;
@@ -112,7 +116,7 @@ hr {
 }
 
 #project-5 {
-  background-color: mediumturquoise;
+  background-color: mediumaquamarine;
 }
 
 
@@ -145,11 +149,41 @@ hr {
   font-size: 3rem;
 }
 
-
+#about-me-img-hidden {
+  display: none;
+}
 html {
   font-size: 1rem;
 }
+@media screen and (max-width:500px) {
+  .project {
+    width: 100%;
 
+  }
+  .bg-image h1 {
+    font-size: 4rem;
+    width: 100%;
+    padding: 0;
+  }
+  .bg-image .mask {
+    width: 100%;
+    text-align: center;
+  }
+  .bg-image h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .bg-image .mask div {
+    text-align: center;
+  }
+  #about-me-img img {
+    display: none;
+  }
+  #about-me-img-hidden {
+    display:block;
+    margin: 1rem;
+  }
+}
 
 @media screen and (max-width: 700px) {
   #contact-me {
@@ -174,8 +208,14 @@ html {
     flex-direction: column;
   }
   .project {
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 100%
+  }
+  #about-me-img img {
+    display: none;
+  }
+  #about-me-img-hidden {
+    display:block;
+    margin: 1rem;
   }
 
 
@@ -185,7 +225,7 @@ html {
     flex-direction: column;
   }
   .project {
-    width: 75%;
+    margin-left: 1.5rem;
     margin-bottom: 1rem;
     align-self: center;
   }
